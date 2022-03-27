@@ -1,0 +1,432 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/proyecto.o
+tabla CODE 0 0 0 21D 2 1
+resVect CODE 0 0 0 3 2 1
+intVect CODE 0 0 0 66 2 1
+udata_bank0 BANK0 1 20 20 17 1 1
+udata_shr COMMON 1 70 70 2 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 37-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 37-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 21D-1FFF 2
+ENTRY 21D-1FFF 2
+IDLOC 2000-2003 2
+CODE 21D-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 21D-1FFF 2
+STRING 21D-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/proyecto.o
+0 tabla CODE >219:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+150 tabla CODE >222:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+151 tabla CODE >223:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+152 tabla CODE >224:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+153 tabla CODE >225:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+154 tabla CODE >226:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+155 tabla CODE >227:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+156 tabla CODE >228:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+157 tabla CODE >229:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+158 tabla CODE >230:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+159 tabla CODE >231:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+15A tabla CODE >232:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+15B tabla CODE >233:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+15C tabla CODE >234:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+15D tabla CODE >235:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+15E tabla CODE >236:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+15F tabla CODE >237:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+160 tabla CODE >238:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+161 tabla CODE >239:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+162 tabla CODE >240:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+163 tabla CODE >241:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+164 tabla CODE >245:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+165 tabla CODE >246:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+166 tabla CODE >247:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+167 tabla CODE >248:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+168 tabla CODE >249:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+169 tabla CODE >250:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+16A tabla CODE >251:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+16B tabla CODE >252:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+16D tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+16E tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+16F tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+170 tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+171 tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+172 tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+173 tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+174 tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+175 tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+176 tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+177 tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+178 tabla CODE >256:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+179 tabla CODE >257:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+17A tabla CODE >258:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+17B tabla CODE >259:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+17C tabla CODE >261:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+17D tabla CODE >262:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+17E tabla CODE >263:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+17F tabla CODE >264:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+180 tabla CODE >266:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+181 tabla CODE >267:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+182 tabla CODE >269:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+183 tabla CODE >271:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+184 tabla CODE >276:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+186 tabla CODE >277:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+187 tabla CODE >278:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+188 tabla CODE >280:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+18A tabla CODE >281:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+18B tabla CODE >282:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+18C tabla CODE >284:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+18D tabla CODE >285:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+18E tabla CODE >287:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+18F tabla CODE >288:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+190 tabla CODE >289:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+191 tabla CODE >290:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+192 tabla CODE >292:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+193 tabla CODE >293:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+194 tabla CODE >294:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+195 tabla CODE >295:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+196 tabla CODE >297:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+197 tabla CODE >298:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+198 tabla CODE >299:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+199 tabla CODE >300:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+19A tabla CODE >301:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+19B tabla CODE >304:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+19D tabla CODE >305:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+19E tabla CODE >306:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+19F tabla CODE >307:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1A0 tabla CODE >308:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1A1 tabla CODE >309:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1A2 tabla CODE >310:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1A3 tabla CODE >314:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1A5 tabla CODE >315:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1A6 tabla CODE >316:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1A7 tabla CODE >317:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1A8 tabla CODE >318:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1A9 tabla CODE >320:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1AB tabla CODE >321:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1AC tabla CODE >322:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1AD tabla CODE >323:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1AE tabla CODE >327:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1B0 tabla CODE >328:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1B1 tabla CODE >329:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1B2 tabla CODE >330:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1B3 tabla CODE >331:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1B4 tabla CODE >332:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1B5 tabla CODE >335:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1B7 tabla CODE >336:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1B8 tabla CODE >337:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1B9 tabla CODE >338:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1BA tabla CODE >339:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1BB tabla CODE >340:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1BC tabla CODE >341:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1BE tabla CODE >341:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1BF tabla CODE >341:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1C0 tabla CODE >341:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1C1 tabla CODE >342:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1C2 tabla CODE >345:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1C4 tabla CODE >346:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1C5 tabla CODE >347:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1C6 tabla CODE >348:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1C7 tabla CODE >349:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1C8 tabla CODE >350:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1C9 tabla CODE >351:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1CA tabla CODE >352:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1CB tabla CODE >352:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1CC tabla CODE >352:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1CD tabla CODE >352:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1CE tabla CODE >352:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1CF tabla CODE >353:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1D0 tabla CODE >356:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1D2 tabla CODE >357:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1D3 tabla CODE >358:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1D4 tabla CODE >359:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1D5 tabla CODE >360:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1D6 tabla CODE >362:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1D7 tabla CODE >364:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1D8 tabla CODE >365:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1D9 tabla CODE >367:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1DB tabla CODE >368:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1DC tabla CODE >369:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1DD tabla CODE >370:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1DE tabla CODE >371:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1DF tabla CODE >372:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1E0 tabla CODE >377:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1E2 tabla CODE >378:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1E3 tabla CODE >379:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1E4 tabla CODE >380:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1E6 tabla CODE >381:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1E7 tabla CODE >382:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1E8 tabla CODE >383:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1E9 tabla CODE >384:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1EA tabla CODE >385:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1EB tabla CODE >386:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1EC tabla CODE >387:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1ED tabla CODE >390:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1EE tabla CODE >391:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1EF tabla CODE >392:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1F0 tabla CODE >394:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1F1 tabla CODE >395:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1F2 tabla CODE >396:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1F3 tabla CODE >397:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1F4 tabla CODE >399:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1F5 tabla CODE >401:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1F6 tabla CODE >402:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1F7 tabla CODE >403:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1F8 tabla CODE >404:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1F9 tabla CODE >406:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1FA tabla CODE >409:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1FB tabla CODE >410:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1FC tabla CODE >411:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1FD tabla CODE >412:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1FE tabla CODE >414:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1FF tabla CODE >415:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+200 tabla CODE >417:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+201 tabla CODE >418:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+202 tabla CODE >420:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+203 tabla CODE >421:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+204 tabla CODE >422:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+205 tabla CODE >425:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+206 tabla CODE >426:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+207 tabla CODE >427:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+208 tabla CODE >428:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+209 tabla CODE >429:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+20A tabla CODE >430:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+20B tabla CODE >433:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+20C tabla CODE >434:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+20D tabla CODE >435:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+20E tabla CODE >436:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+20F tabla CODE >437:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+210 tabla CODE >438:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+211 tabla CODE >441:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+212 tabla CODE >442:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+213 tabla CODE >443:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+214 tabla CODE >444:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+215 tabla CODE >445:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+216 tabla CODE >446:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+217 tabla CODE >450:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+218 tabla CODE >451:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+219 tabla CODE >452:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+21A tabla CODE >453:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+21B tabla CODE >454:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+21C tabla CODE >455:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+0 intVect CODE >92:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+4 intVect CODE >94:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+5 intVect CODE >95:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+6 intVect CODE >96:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+7 intVect CODE >103:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+8 intVect CODE >104:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+9 intVect CODE >106:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+A intVect CODE >107:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+B intVect CODE >109:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+C intVect CODE >110:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+D intVect CODE >111:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+E intVect CODE >112:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+F intVect CODE >117:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+10 intVect CODE >118:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+11 intVect CODE >119:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+12 intVect CODE >120:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+13 intVect CODE >121:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+14 intVect CODE >126:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+16 intVect CODE >126:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+17 intVect CODE >126:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+18 intVect CODE >126:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+19 intVect CODE >127:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1A intVect CODE >128:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1B intVect CODE >129:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1C intVect CODE >134:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1D intVect CODE >134:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1E intVect CODE >134:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+1F intVect CODE >134:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+20 intVect CODE >134:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+21 intVect CODE >135:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+22 intVect CODE >136:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+23 intVect CODE >137:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+24 intVect CODE >139:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+25 intVect CODE >140:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+26 intVect CODE >141:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+27 intVect CODE >142:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+28 intVect CODE >143:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+29 intVect CODE >144:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+2A intVect CODE >146:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+2B intVect CODE >147:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+2C intVect CODE >148:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+2D intVect CODE >149:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+2E intVect CODE >150:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+2F intVect CODE >151:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+30 intVect CODE >152:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+31 intVect CODE >153:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+32 intVect CODE >155:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+33 intVect CODE >156:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+34 intVect CODE >157:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+35 intVect CODE >158:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+36 intVect CODE >159:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+37 intVect CODE >160:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+38 intVect CODE >161:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+39 intVect CODE >162:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+3A intVect CODE >163:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+3B intVect CODE >164:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+3C intVect CODE >166:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+3D intVect CODE >167:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+3E intVect CODE >168:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+3F intVect CODE >169:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+40 intVect CODE >170:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+41 intVect CODE >171:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+42 intVect CODE >172:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+43 intVect CODE >173:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+44 intVect CODE >174:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+45 intVect CODE >176:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+46 intVect CODE >177:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+47 intVect CODE >178:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+48 intVect CODE >179:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+49 intVect CODE >180:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+4A intVect CODE >181:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+4B intVect CODE >182:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+4C intVect CODE >183:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+4D intVect CODE >185:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+4E intVect CODE >186:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+4F intVect CODE >187:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+50 intVect CODE >188:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+51 intVect CODE >189:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+52 intVect CODE >190:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+53 intVect CODE >191:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+54 intVect CODE >194:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+55 intVect CODE >195:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+56 intVect CODE >196:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+57 intVect CODE >197:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+58 intVect CODE >199:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+59 intVect CODE >200:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+5A intVect CODE >201:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+5B intVect CODE >202:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+5C intVect CODE >203:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+5D intVect CODE >204:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+5E intVect CODE >206:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+5F intVect CODE >207:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+60 intVect CODE >208:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+61 intVect CODE >209:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+62 intVect CODE >210:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+63 intVect CODE >211:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+64 intVect CODE >215:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+65 intVect CODE >216:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+0 resVect CODE >86:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+0 resVect CODE >88:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+2 resVect CODE >89:C:\Users\dellG3\MPLABXProjects\Proyecto1.X\proyecto.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 21D 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Htabla 0 0 ABS 0 tabla -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ltabla 0 0 ABS 0 tabla -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVect 0 0 ABS 0 intVect -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+__HintVect 0 0 ABS 0 intVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 17 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
